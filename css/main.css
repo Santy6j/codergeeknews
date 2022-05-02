@@ -1,0 +1,413 @@
+.bGround {
+  background-image: url(../img/background.JPG);
+  background-color: rgb(155, 149, 149);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.encabezado {
+  display: grid;
+  grid-template-rows: 1fr;
+  align-content: center;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logoForo {
+  display: inline-block;
+  grid-column: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.menu {
+  color: antiquewhite;
+  font-size: 3vw;
+  border-width: 1px;
+  margin: 10px;
+  grid-column: 2;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  gap: 1vw;
+}
+
+.menuSocials {
+  color: antiquewhite;
+  font-size: 3vw;
+  text-align: center;
+  grid-column: 3;
+  display: inline-block;
+  border: 5px;
+  border-color: bisque;
+}
+
+.noticias {
+  display: grid;
+  grid-auto-flow: 1fr;
+  height: 80vh;
+}
+
+/* Ubicacion de las noticias en el grid */
+.item1 {
+  grid-column: 1;
+}
+
+.item2 {
+  grid-column: 1;
+}
+
+.item3 {
+  grid-column: 1;
+}
+
+.item4 {
+  grid-column: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.item5 {
+  grid-column: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.item6 {
+  grid-column: 1;
+}
+
+.item7 {
+  grid-column: 1;
+}
+
+.img {
+  display: block;
+  height: 15vw;
+  width: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+
+}
+
+.title {
+  color: rgba(140, 228, 240, 0.863);
+  font-family: 'Anybody', cursive;
+  font-size: 4vw;
+  text-justify: auto;
+  text-align: center;
+
+}
+
+.text {
+  color: antiquewhite;
+  font-family: 'Anybody', cursive;
+  font-size: 2.5vw;
+  word-break: break-all;
+  margin-right: 1.5vw;
+  text-align: center;
+}
+
+/* grid tambien usado en otras paginas */
+.noti {
+  display: grid;
+  grid-auto-flow: 1fr;
+  height: 80vh;
+}
+
+.textNoti {
+  color: antiquewhite;
+  font-family: 'Anybody', cursive;
+  font-size: 2.75vw;
+  word-break: break-all;
+  text-align: center;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.textLink {
+  color: red;
+  font-family: 'Anybody', cursive;
+  font-size: 2vw;
+}
+
+/*aca comienza lo relativo al footer*/
+
+.piePag {
+  display: grid;
+  grid-template-rows: 2fr;
+  height: 17vw;
+}
+
+.sugest {
+  color: antiquewhite;
+  font-family: 'Anybody', cursive;
+  font-size: 14px;
+  border: 1px;
+  margin-top: 6vw;
+}
+
+.about {
+  color: antiquewhite;
+  font-family: 'Anybody', cursive;
+  font-size: 2.75vw;
+  border: 1px;
+  bottom: 1px;
+  justify-self: center;
+  align-self: end;
+}
+
+.staff {
+  text-align: center;
+  align-self: center;
+  padding: 1px;
+}
+
+.video {
+  height: 50vw;
+  width: 50vw;
+  margin: auto;
+  align-items: center;
+}
+
+/*pantalla de login*/
+
+form {
+  border: 3px solid #f1f1f1;
+  color: antiquewhite;
+}
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: antiquewhite;
+}
+
+/* estilo de los botones */
+button {
+  background-color: #0430aa80;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* boton cancelar */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* olvidaste password*/
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* media queries */
+
+@media screen and (min-width : 555px) {
+  .noticias {
+    display: grid;
+    grid-auto-flow: 1fr;
+    height: 200vh;
+  }
+
+  .img {
+    display: block;
+    height: 20vh;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+
+  }
+
+  .textNoti {
+    color: antiquewhite;
+    font-family: 'Anybody', cursive;
+    font-size: 2vw;
+    word-break: break-all;
+    text-align: center;
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  .video {
+    height: 40vw;
+    width: 50vw;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width : 1024px) {
+
+  .noticias {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    height: 115vh;
+  }
+
+  /* Ubicacion de las noticias en el grid */
+  .item1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .item2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .item3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .item4 {
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item5 {
+    grid-column: 2;
+    grid-row: 3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item6 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .item7 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .img {
+    display: block;
+    height: 15vw;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .title {
+    color: rgba(140, 228, 240, 0.863);
+    font-family: 'Anybody', cursive;
+    font-size: 4vh;
+    text-justify: center;
+    align-self: center;
+    grid-column: 2;
+
+  }
+
+  .text {
+    color: antiquewhite;
+    font-family: 'Anybody', cursive;
+    font-size: 2vw;
+    word-break: break-all;
+    margin-right: 1.5vw;
+    text-align: center;
+  }
+
+  .textNoti {
+    color: antiquewhite;
+    font-family: 'Anybody', cursive;
+    font-size: 1.25vw;
+    word-break: break-all;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .textLink {
+    color: red;
+    font-family: 'Anybody', cursive;
+    font-size: 18px;
+  }
+
+
+  /*aca comienza lo relativo al footer*/
+
+  .piePag {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    height: 18vw;
+  }
+
+  .sugest {
+    color: antiquewhite;
+    font-family: 'Anybody', cursive;
+    font-size: 14px;
+    grid-column: 1;
+    border: 1px;
+    margin-top: 6vw;
+  }
+
+  .about {
+    color: antiquewhite;
+    font-family: 'Anybody', cursive;
+    grid-column: 2;
+    font-size: 2vw;
+    border: 1px;
+    bottom: 1px;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .staff {
+    text-align: center;
+    align-self: center;
+    padding: 1px;
+  }
+
+  .noti {
+    display: grid;
+    grid-auto-flow: 2fr;
+    height: 60vh;
+  }
+
+  .video {
+    height: 40vh;
+    width: 30vw;
+    margin: auto;
+    align-self: center;
+    grid-column: 2;
+  }
+
+  form {
+    border: 3px solid #f1f1f1;
+    color: antiquewhite;
+    grid-column: 2;
+  }
+
+}
