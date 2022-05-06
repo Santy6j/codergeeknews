@@ -11,8 +11,7 @@ a {
 }
 
 .encabezado {
-  display: grid;
-  grid-template-rows: 1fr;
+  display: flex
   align-content: center;
 }
 
@@ -98,8 +97,8 @@ a {
 
 .img {
   display: block;
-  height: 15vw;
-  width: 10vh;
+  height: 10vw;
+  width: 5vh;
   margin-left: auto;
   margin-right: auto;
   align-self: center;
@@ -128,13 +127,12 @@ a {
 .noti {
   display: grid;
   grid-auto-flow: 1fr;
-  height: 80vh;
 }
 
 .textNoti {
   color: antiquewhite;
   font-family: 'Anybody', cursive;
-  font-size: 2.75vw;
+  font-size: 2vw;
   word-break: break-all;
   text-align: center;
   margin-right: 8px;
@@ -152,7 +150,7 @@ a {
 .piePag {
   display: grid;
   grid-template-rows: 2fr;
-  height: 17vw;
+  height: 4vw;
 }
 
 .sugest {
@@ -166,7 +164,7 @@ a {
 .about {
   color: antiquewhite;
   font-family: 'Anybody', cursive;
-  font-size: 2.75vw;
+  font-size: 1.5vw;
   border: 1px;
   bottom: 1px;
   justify-self: center;
