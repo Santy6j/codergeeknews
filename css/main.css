@@ -12,7 +12,11 @@ a {
 
 .encabezado {
   display: flex
-  align-content: center;
+}
+
+.container {
+  font-family: 'Anybody', cursive;
+  color: antiquewhite !important;
 }
 
 .logo {
@@ -96,9 +100,8 @@ a {
 }
 
 .img {
-  display: block;
-  height: 10vw;
-  width: 5vh;
+  display: grid;
+  border: 5px;
   margin-left: auto;
   margin-right: auto;
   align-self: center;
@@ -108,35 +111,26 @@ a {
 .title {
   color: rgba(140, 228, 240, 0.863);
   font-family: 'Anybody', cursive;
-  font-size: 4vw;
+  font-size: 2rem;
   text-justify: auto;
   text-align: center;
 
 }
 
 .text {
-  color: antiquewhite;
+  color: rgb(255, 253, 250);
   font-family: 'Anybody', cursive;
-  font-size: 2.5vw;
   word-break: break-all;
-  margin-right: 1.5vw;
   text-align: center;
 }
 
 /* grid tambien usado en otras paginas */
-.noti {
-  display: grid;
-  grid-auto-flow: 1fr;
-}
 
 .textNoti {
   color: antiquewhite;
   font-family: 'Anybody', cursive;
-  font-size: 2vw;
-  word-break: break-all;
+  font-size: 2em;
   text-align: center;
-  margin-right: 8px;
-  margin-left: 8px;
 }
 
 .textLink {
@@ -178,10 +172,9 @@ a {
 }
 
 .video {
-  height: 50vw;
-  width: 50vw;
-  margin: auto;
+  display: inline-block;
   align-items: center;
+  align-self: center;
 }
 
 /*pantalla de login*/
@@ -203,7 +196,7 @@ input[type=password] {
 }
 
 /* estilo de los botones */
-button {
+buttonForm {
   background-color: #0430aa80;
   color: white;
   padding: 14px 20px;
@@ -213,18 +206,18 @@ button {
   width: 100%;
 }
 
-button:hover {
+buttonForm:hover {
   opacity: 0.8;
 }
 
 /* boton cancelar */
-.cancelbtn {
+.cancelbtnForm {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
 }
 
-.container {
+.containerForm {
   padding: 16px;
 }
 
@@ -246,7 +239,10 @@ span.psw {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.crecer:hover, .crecer:focus, .crecer:active {
+
+.crecer:hover,
+.crecer:focus,
+.crecer:active {
   -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
@@ -288,14 +284,14 @@ span.psw {
   height: 42%;
   position: absolute;
   bottom: -25%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, .9),rgba(255, 255, 255, .5));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .9), rgba(255, 255, 255, .5));
   z-index: 1;
 }
 
 
 /* media queries */
 
-@media screen and (min-width : 555px) {
+@media screen and (min-width : 575px) {
   .noticias {
     display: grid;
     grid-auto-flow: 1fr;
@@ -304,10 +300,8 @@ span.psw {
 
   .img {
     display: block;
-    height: 20vh;
-    width: 30vw;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin: auto;
     align-self: center;
 
   }
@@ -315,7 +309,6 @@ span.psw {
   .textNoti {
     color: antiquewhite;
     font-family: 'Anybody', cursive;
-    font-size: 2vw;
     word-break: break-all;
     text-align: center;
     margin-right: 8px;
